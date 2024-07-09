@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <h1>Stock Price Prediction</h1>
+    <button id="fetchSymbolsButton">有名な銘柄</button>
+    <div id="symbolList"></div>
+    <h2>Enter Symbol:</h2>
+    <input type="text" id="symbolInput" placeholder="Enter Stock Symbol (e.g., AAPL)">
+    <button id="predictButton">予測する</button>
+    <h2 id="selectedSymbol"></h2>
+    <canvas id="predictionChart" width="400" height="200"></canvas>
+
+    <script>
+        document.getElementById('fetchSymbolsButton').addEventListener('click', fetchSymbols);
+        document.getElementById('predictButton').addEventListener('click', () => {
+            const symbol = document.getElementById('symbolInput').value;
+            getPrediction(symbol);
+        });
+    </script>
+</body>
+</html>

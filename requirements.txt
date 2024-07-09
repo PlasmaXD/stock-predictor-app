@@ -1,0 +1,7 @@
+numpy
+pandas
+flask
+tensorflow
+alpha_vantage
+scikit-learn
+python-dotenv

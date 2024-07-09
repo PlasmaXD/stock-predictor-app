@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#symbolList {
+    margin-top: 20px;
+}
+
+.symbol {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.symbol:hover {
+    background-color: #eee;
+}
