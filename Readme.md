@@ -26,9 +26,7 @@
   - Alpha Vantage API：株価データを取得
   - Python-dotenv：環境変数の管理
 
-- **コンテナ化**:
-  - Docker：アプリケーションをコンテナとしてパッケージ化
-  - Docker Compose：複数のコンテナを簡単に管理
+
 
 ### プロジェクト構成
 
